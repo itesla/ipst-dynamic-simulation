@@ -21,6 +21,7 @@
 
     <modules>
         <module>distribution-dynamic-simulation</module>
+        <module>EU2Mod_MB</module>
         <module>eurostag-ech-export</module>
         <module>eurostag-integration</module>
         <module>eurostag-network</module>
