@@ -22,7 +22,7 @@
 
     <packaging>pom</packaging>
 
-    <name>Distribution</name>
+    <name>iPST dynamic simulation distribution</name>
     <description>ipst dynamic simulation distribution module</description>
 
 
@@ -31,12 +31,12 @@
         <!-- Eurostag simulator (WP4.3) -->
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>eurostag-integration</artifactId>
+            <artifactId>ipst-eurostag-integration</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>eurostag-step-up-transformer</artifactId>
+            <artifactId>ipst-eurostag-step-up-transformer</artifactId>
             <version>${project.version}</version>
         </dependency>
 
