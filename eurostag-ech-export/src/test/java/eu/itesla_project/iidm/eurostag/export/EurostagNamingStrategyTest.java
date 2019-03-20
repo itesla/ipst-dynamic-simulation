@@ -51,7 +51,7 @@ public class EurostagNamingStrategyTest {
                 .thenReturn(Collections.emptyList());
         Mockito.when(net.getLoads())
                 .thenReturn(Collections.emptyList());
-        Mockito.when(net.getShunts())
+        Mockito.when(net.getShuntCompensators())
                 .thenReturn(Collections.emptyList());
         Mockito.when(net.getStaticVarCompensators())
                 .thenReturn(Collections.emptyList());

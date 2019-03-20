@@ -56,7 +56,7 @@ public final class EurostagDictionary {
         });
         Identifiables.sort(network.getLoads()).forEach(l -> loadIds.add(l.getId()));
         Set<String> generatorIds = Identifiables.sort(network.getGenerators()).stream().map(Generator::getId).collect(Collectors.toSet());
-        Set<String> shuntIds = Identifiables.sort(network.getShunts()).stream().map(ShuntCompensator::getId).collect(Collectors.toSet());
+        Set<String> shuntIds = Identifiables.sort(network.getShuntCompensators()).stream().map(ShuntCompensator::getId).collect(Collectors.toSet());
         Set<String> svcIds = Identifiables.sort(network.getStaticVarCompensators()).stream().map(StaticVarCompensator::getId).collect(Collectors.toSet());
         Set<String> converterStationsIds = Identifiables.sort(network.getVscConverterStations()).stream().map(VscConverterStation::getId).collect(Collectors.toSet());
 
