@@ -642,7 +642,7 @@ public class EurostagEchExport implements EurostagEchExporter {
     }
 
     private void createBanks(EsgNetwork esgNetwork) {
-        for (ShuntCompensator sc : Identifiables.sort(network.getShunts())) {
+        for (ShuntCompensator sc : Identifiables.sort(network.getShuntCompensators())) {
             // skip shunts not in the main connected component
             if (config.isExportMainCCOnly() && !EchUtil.isInMainCc(sc, config.isNoSwitch())) {
                 LOGGER.warn("not in main component, skipping ShuntCompensator: {}", sc.getId());
