@@ -90,7 +90,8 @@ public class EurostagEchExport implements EurostagEchExporter {
     }
 
     private EsgNode createNode(String busId, VoltageLevel vl, double v, double angle, boolean slackBus) {
-        return createNode(busId, vl.getSubstation().getCountry().name(), vl.getNominalV(), v, angle, slackBus);
+        Country country = vl.getSubstation().getCountry().orElseThrow(() -> new RuntimeException("country must not be null for substation " + vl.getSubstation().getId()));
+        return createNode(busId, country.name(), vl.getNominalV(), v, angle, slackBus);
     }
 
     private void createNodes(EsgNetwork esgNetwork) {

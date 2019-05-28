@@ -61,9 +61,6 @@ public class EurostagExportTool implements Tool, EurostagConstants {
         context.getOutputStream().println("loading case...");
         // load network
         Network network = Importers.loadNetwork(caseFile);
-        if (network == null) {
-            throw new RuntimeException("Case '" + caseFile + "' not found");
-        }
         network.getVariantManager().allowVariantMultiThreadAccess(true);
 
         context.getOutputStream().println("exporting ech...");
